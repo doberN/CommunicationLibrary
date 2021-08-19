@@ -1,0 +1,110 @@
+
+.menu-box *{
+    box-sizing: border-box;
+}
+.menu-box{
+    position: relative;
+    font-size: 1em; 
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content:space-around;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    border-radius: 0.8em;
+    background-color: rgb(51, 49, 49);
+    padding: 1em;
+}
+
+.menu-box .close{
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+.menu-box .close .fas{
+    position: absolute;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.menu-box .box{
+    position: relative;
+   transition: 0.1s;
+    width: 43%;
+    height: 28%;  
+    background-color: rgb(42, 131, 231);  
+    position: relative;
+    cursor: pointer;
+    border-radius: 0.3em;
+    transition: 0.4s;
+    direction: rtl;
+}
+
+.menu-box .box .list{
+    position: absolute;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(78, 74, 74);
+    z-index: 10;
+    color: white;
+   
+}
+
+.menu-box .box .list ul{
+    list-style: none;
+    z-index: 10;
+    color: white;
+    padding: 0.2em;
+    margin: 0.2em 0 0 0;
+    font-size: 1.2em;
+}
+
+.menu-box .box .list li{
+    font-size: 1.4em;
+    padding: 0.2em 0.2em 0.2em 0.4em;
+    transition: 0.4s;
+    background-color: rgb(46, 46, 46);
+    margin-bottom: 0.2em;
+    border-radius: 0.2em;
+    
+}
+.menu-box .box .list li:hover{
+    background-color: rgb(42, 131, 231);
+}
+
+.menu-box i{
+    position: absolute;
+    color: white;
+    font-size: 3em;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.menu-box .box:hover{
+  background-color: rgb(29, 104, 189);  
+}
+
+.menu-box span{
+    position: absolute;
+    color: white;
+    bottom: 0;
+    padding: 0.2em;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.3em;
+}
+
+@media only screen and (max-width: 400px) 
+  {
+    .menu-box .box{
+
+        width: 45%;
+
+    }
+   
+  }

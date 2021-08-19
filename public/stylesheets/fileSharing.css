@@ -1,0 +1,336 @@
+
+  
+.box-file-sharing *{
+    box-sizing: border-box;
+}
+.box-file-sharing{
+    position: relative;
+    height: 102%;
+    width: 100%;
+    font-size: 1em;
+    border-radius: 0.8em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;  
+}
+
+.box-file-sharing-header{
+    width: 100%;
+    background-color: rgb(66, 70, 88);  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.2em solid rgb(16, 148, 236);
+    padding-left: 1rem;
+    font-size: 0.85em;
+    flex: 0.8;
+}
+.box-file-sharing .far,.box-file-sharing .fas{
+    color: white;
+    font-size: 2.1em;
+    transition: 0.3s;
+}
+
+.box-file-sharing *{
+    margin-right:0.2em;  
+}
+
+.box-file-sharing > .far{
+    margin: 0 0.4em;
+ }
+
+ .box-file-sharing .fas:hover{ 
+     cursor: pointer;
+ }
+
+ .all-file-sharing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 88%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+ }
+
+ .all-file-sharing .start-file-sharing{
+    color: rgb(124, 122, 122);
+    font-size: 2em;
+    position: relative;
+    top: 40%;
+    left: 10%;
+    width: 60%;
+    transform: translate(-50% -50%);
+ }
+
+ .box-file{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    margin: 0.5em 0 0.5em 0;
+    border-radius: 2em;
+    box-shadow: 0 0 5px black;
+    font-size: 0.7rem;
+ }
+ .box-file.my{
+     background-color: rgb(231, 222, 222);
+ }
+
+ .box-file .img{
+    width: 6em;
+    height: 6em;
+}
+
+ .box-file img{
+     width: 100%;
+     height: 90%;
+     border-radius: 50%;
+     padding: 0.6em;
+ }
+
+ .content-file{
+     width: 75%;
+     height: 100%;
+     padding: 0.2em;
+ }
+
+ .content-file .name{
+     cursor: pointer;
+     color: rgb(66, 70, 88);
+     font-size: 1.2em;
+     position: relative;
+     top: 0.2em;
+     display: inline;
+ }
+
+ .content-file .title{
+     position: relative;
+     top: -0.2em;
+    color: pink;
+    font-size: 1.5em;
+    color: rgb(16, 148, 236);
+    direction: rtl;
+    overflow: block;
+    width: 100%;
+    word-wrap: break-word;
+}
+.file{
+    direction: rtl;
+}
+
+.file .fas{
+    color: rgb(16, 148, 236);
+    font-size: 2em;
+}
+.data-bottom-file{
+    display: flex;
+    width: 100%;
+    margin: 1em 0 0.4em 3em
+}
+.data-bottom-file .offensive{
+   cursor: pointer;
+   margin-right: 1em;
+   margin-left: 1em;
+   font-size: 1.3em;
+}
+.data-bottom-file .number{
+    margin: -0.1em 0.5em;
+    font-size: 1.8em;
+ }
+.data-bottom-file .fas,
+.data-bottom-file .far{
+    color: rgb(66, 70, 88);
+    font-size: 1.8em;
+    cursor: pointer;
+    
+
+}
+.data-bottom-file .far{
+    margin-right: 0em;
+}
+.box-file .file-name{
+    display: inline-block;
+    width:4em;
+    overflow: hidden;
+}
+.data-bottom-file .date{
+    color: white(16, 148, 236);
+    font-size: 1.4em;
+}
+
+
+.box-file-sharing .open-forum-upload{
+
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 0 0 2em black;
+    padding: 0.8em;
+    cursor: pointer;
+}
+
+.open-forum-upload .fas{
+    font-size: 1.8em;
+    color: rgb(16, 148, 236);
+    padding-left: 0.1em;  
+}
+
+.form-upload{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+    background-color: white;
+    top: 15%;
+}
+div.form-upload{
+    display: none;
+}
+.form-upload .exit{
+    width: 100%;
+    direction: rtl;
+    margin-bottom: 1em;
+}
+
+.form-upload .exit .fas{
+    color: rgb(66, 70, 88);
+    font-size: 2em;
+    position: absolute;
+    padding: 0.4em;
+}
+
+.form-upload .form-title{
+    font-size: 1.8em;
+    color: rgb(16, 148, 236);
+    margin-top: 0.3em;
+    text-transform: uppercase;
+    direction: rtl;
+}
+
+.upluad-logo{
+    margin-top: 1em;
+    margin-bottom: 2.4em;
+}
+.form-upload .upload{
+    font-size: 2.6em;
+    color: rgb(16, 148, 236);
+}
+
+.form-upload .file-title input{
+    display: block;
+    outline: none;
+    border: none;
+    border-bottom: 0.1em solid rgb(16, 148, 236);
+    text-indent: 0.6em;
+    font-size: 1.2em;
+    color: rgb(122, 109, 109);
+    direction: rtl;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.form-upload .preview-file{
+    margin: 2em auto 0 auto;
+    width: 70%;
+    height:30%;
+    border: 0.1em dashed rgb(16, 148, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.form-upload .remove-border{
+    border: none ;
+}
+
+.preview-file img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.form-upload .button-select{
+    width: 40%;
+    background-color: rgb(16, 148, 236);
+    color: white;
+    outline: none;
+    border: none;
+    height: 30%;
+    border-radius: 0.2em;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1em;
+    
+}
+
+
+
+.form-upload .buttons-bottom{
+    margin-top: 1em;
+    width: 70%;
+}
+
+.form-upload .button-upload,
+.form-upload .button-cancel{
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0.5em;
+    cursor: pointer;
+    color: white;
+    width: 4.4em;
+    background-color: rgb(184, 170, 170);
+}
+.form-upload .active-cancel{
+    background-color: rgb(16, 148, 236);
+}
+.form-upload .active-upload{
+    background-color: rgb(16, 148, 236);
+}
+
+.form-upload .button-cancle{
+    background-color: rgb(138, 144, 148);
+    width: 3.5em;
+}
+
+@media only screen and (max-height: 400px) 
+{
+
+    .box-file-sharing-header{  
+        flex: 1.5;
+    }
+    .form-upload .form-title {
+        margin-top: -1em;
+    }
+    .form-upload .button-select{    
+        font-size: 0.7em;       
+    }
+    .form-upload .form-title {
+        margin-top: 0;
+    }
+ 
+}
+
+
+@media only screen and (max-width: 400px) 
+  {
+    .form-upload .buttons-bottom {
+        margin-top: 0.4em;
+        width: 70%;
+    }
+    .form-upload .form-title {
+        margin-top: 1.4em;
+ 
+    }
+    .form-upload .button-select {
+        height: 2.5em;
+    }
+  }

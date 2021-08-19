@@ -1,0 +1,77 @@
+#panel .popupNotice *{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-align: center;
+}
+#panel .popupNotice{
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px black;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    background-color: white;
+    animation-name: popup;
+    animation-duration: 1s;
+    transition: 1s;
+}
+@keyframes popup {
+    from {left: 150%;}
+    to {left: 50%;}
+  }
+  
+#panel .popupNotice i{
+    font-size: 5em;
+    margin-top: 0.2em;
+}
+#panel .popupNotice .success{
+    color: rgb(144, 207, 136);
+}
+
+#panel .popupNotice .success{
+    color: rgb(144, 207, 136);
+}
+
+#panel .popupNotice .error{
+    color: rgb(194, 73, 73);
+}
+
+#panel .popupNotice p:nth-child(2){
+    font-size: 2em;
+    margin-top: 0.7em;
+
+}
+
+#panel .popupNotice p:nth-child(3){
+    font-size: 1.3em;
+    margin-top: 0.6em;
+    padding: 0.2em;
+    width: 80%;
+}
+
+#panel .popupNotice button{
+    position: absolute;
+    font-size: 1.2em;
+    background-color: rgb(16, 148, 236);
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+    padding: 0.5em 1em 0.5em 1em;
+    bottom: 3%;
+    width: 4em;
+    
+}
+
+#panel .popupNotice a{
+    color: rgb(16, 148, 236);
+    cursor: pointer;
+}

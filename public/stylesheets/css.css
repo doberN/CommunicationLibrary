@@ -1,0 +1,226 @@
+.all-messages::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .all-messages::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .all-messages::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  .all-messages::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.chat-box{
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 0.8em;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+    
+}
+
+.chat-box *{
+    box-sizing: border-box;
+}
+.chat-header{
+    width: 100%;
+    height: 12%;
+    background-color: rgb(66, 70, 88);  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.2em solid rgb(16, 148, 236);
+}
+.chat-box .far,.chat-box .fas{
+    color: white;
+    font-size: 2.1em;
+    transition: 0.3s;
+}
+
+.chat-header *{
+    margin-right:0.2em;  
+}
+
+.chat-header .far{
+   margin: 0 0.4em;
+}
+.chat-header .fas:hover{
+ 
+    cursor: pointer;
+}
+
+.all-messages{
+    padding: 1px;
+    height: 73%;
+    width: 100%;
+    overflow: auto;
+}
+.all-messages .my-message{
+   display: flex;
+   flex-direction: row;
+   margin: 0.9em 0 0 0.2em;
+}
+.all-messages .message{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0.9em 0 0 0.2em;
+ }
+.all-messages .text{ 
+      position: relative;
+      max-width: 10em;
+      font-size: 1.5em;
+      color: white;
+      padding:  0.3em 0.3em 1em 0.3em;
+      border-radius: 0.4em;
+      word-wrap: break-word;
+      display: inline-block;
+      min-width: 3em;
+}
+
+.my-message .text{
+    background-color: rgb(16, 148, 236);
+}
+.message .text{
+    background-color: rgb(131, 144, 153);
+}
+.all-messages .img{
+    width: 3em;
+    height:3em;
+    border-radius: 50%;
+    margin: 0 0.2em 0 0.2em;
+   
+}
+.all-messages .date{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 0.7em;
+    padding:0.2em 0.5em 0.2em 0;
+}
+
+.all-messages .reporting{
+    position: absolute;
+    bottom: 0;
+    right: 2em;
+    padding:0.2em 0.5em 0.2em 0;
+    font-size:0.7em;
+   
+}
+
+
+.all-messages .my-message:before
+ {
+    content: "";
+    width: 0px;
+    height: 0px;
+    box-sizing: border-box;
+    position: relative;
+    border-left: 1.5em solid transparent;
+    border-right: 0em solid transparent;
+    border-top: 1.25em solid rgb(16, 148, 236);
+    left: 4em;
+    top: 1em;
+    
+  }
+
+  .all-messages .message:before
+ {
+    content: "";
+    width: 0px;
+    height: 0px;
+    box-sizing: border-box;
+    position: relative;
+    border-right: 1.5em solid transparent;
+    border-left: 0em solid transparent;
+    border-top: 1.25em solid rgb(131, 144, 153);
+    left: -4em;
+    top: 1em;
+    
+  }
+
+  
+  /*<!DOCTYPE html>
+<html>
+  <head> 
+   
+    <link rel='stylesheet' href='/stylesheets/chat.css' />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  </head>
+  <body>    
+  <!--  <script type="module" src="http://localhost:3000/javascripts/initHtml.js"></script> -->
+    <div class="panel" style="width: 350px; height: 450px; position: absolute;top:50%; left: 50%; transform: translate(-50%, -50%);">
+
+      <div class="chat-box">
+
+        <div class="chat-header">
+          <div class="left">
+            <i class='far fa-comments'> Chat</i>
+          </div>
+         <div class="right">
+            <i class='fas fa-list-ul'></i>
+            <i class='fas fa-window-close'></i>
+          </div>
+        </div>
+
+        <div class="all-messages">
+          <div class="my-message">
+            <img class="img" src="http://localhost:3000/filesOfFileSharing/picture/wow.jpg" alt="">
+            <div class="text">what app <i class='fas fa-comment-slash reporting'></i><span class="date">2:30</span></div>
+          </div>
+
+          <div class="message">
+            <img class="img" src="http://localhost:3000/filesOfFileSharing/picture/wow.jpg" alt="">
+            <div class="text">hi my name is dober<i class='fas fa-comment-slash reporting'></i><span class="date">2:30</span></div>
+          </div>
+
+          <div class="my-message">
+            <img class="img" src="http://localhost:3000/filesOfFileSharing/picture/wow.jpg" alt="">
+            <div class="text">good<i class='fas fa-comment-slash reporting'></i><span class="date">2:30</span></div>
+          </div>
+
+          <div class="message">
+            <img class="img" src="http://localhost:3000/filesOfFileSharing/picture/wow.jpg" alt="">
+            <div class="text">hi my name is dober<i class='fas fa-comment-slash reporting'></i><span class="date">2:30</span></div>
+          </div>
+
+          <div class="message">
+            <img class="img" src="http://localhost:3000/filesOfFileSharing/picture/wow.jpg" alt="">
+            <div class="text">hi my name is dober<i class='fas fa-comment-slash reporting'></i><span class="date">2:30</span></div>
+          </div>
+
+          
+
+          <!--<div class="message">;lk;</div>
+          <div class="my-message">;lk;</div>
+          <div class="my-message">;lkn;mmmmmmmmmmmmmmmlkl 'm'lk ';l lkm;lk ;lkllll ll lllll  lll l</div>
+          <div class="message">;lk;</div>
+          <div class="my-message">;lk;</div> -->
+        </div>
+
+      </div>
+
+
+
+    </div>
+       
+          
+          
+          <!--    <i class='far fa-comment-alt'></i>
+            <i class='far fa-folder-open'></i>-->
+         <!-- <i class='fas fa-paper-plane'></i>-->
+  
+
+  </body>
+</html>
+ */
+
+ 

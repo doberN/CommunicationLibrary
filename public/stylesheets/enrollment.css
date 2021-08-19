@@ -1,0 +1,166 @@
+
+.form-enrollment{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-enrollment .form{
+    width: 80%;
+    position: relative;
+}
+.form-enrollment .header{
+    display: flex;
+    justify-content: space-between;
+}
+.form-enrollment .form-title{
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(107, 100, 100);
+}
+.form-enrollment .header > .menu{
+    direction: rtl;
+    margin-top: 1em;
+    position: relative;
+    cursor: pointer;
+}
+
+.form-enrollment ul{
+    position: absolute;
+    overflow: hidden;
+    border-radius: 0.4em;
+    direction: rtl;
+    padding: 0.1em;
+    list-style: none;
+    background-color: rgb(248, 247, 246); 
+    width: 10em;
+    z-index: 1;
+    display: none;
+}
+.form-enrollment .user-img ul{
+    margin: -0.4em 0 0 0 ;
+    text-align: right;
+}
+.form-enrollment .menu ul{
+    margin: 2em 0 0 0 ;
+}
+.form-enrollment ul li{
+    cursor: pointer;
+    color: rgb(107, 100, 100);
+    background-color: rgb(248, 247, 246);
+    padding: 0.4em;
+    font-size: 1.3em;
+    box-sizing: border-box;
+    border: 0.2em solid rgb(248, 247, 246);  
+}
+.form-enrollment ul li:hover{
+    background-color: rgb(16, 148, 236);
+    color: white;
+}
+.form-enrollment .menu .fas{
+    color: rgb(107, 100, 100);
+}
+.sign-up .form-title{
+    margin: 0.5em 0 1.2em 0;
+}
+.log-in .form-title{
+    margin: 0.5em 0 3.4em 0;
+}
+.reset-password .form-title{
+    margin: 0.5em 0 5em 0;
+}
+.update-user .form-title{
+    margin: 0.5em 0 0.5em 0;
+}
+.change-password .form-title{
+    margin: 0.5em 0 4.8em 0;
+}
+
+.update-user .user-img{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+}
+
+.update-user .user-img .fas{
+    top: 30%;
+    margin-left: -10%;
+    cursor: pointer;
+    background-color: rgb(247, 247, 247);
+    border-radius: 50%;
+    box-shadow: 0 0 10px black;
+    font-size: 1em;
+}
+
+.update-user .user-img img{
+    width: 35%;
+    height: 100%;
+    border-radius: 4em;
+    opacity: 0.8;
+}
+
+.form-enrollment .fas{
+    position: absolute;
+    padding: 0.4em;
+    font-size: 1.7em;
+    color: rgb(16, 148, 236);
+}
+
+.form-enrollment input{
+    width: 100%;
+    font-size: 1.2em;
+    height: 40%;
+    padding: 0.5em;
+    padding-left: 2em;
+    color: rgb(102, 95, 95);
+    outline: none;
+    margin-bottom: 1em;
+    border: none;
+    border-bottom: 0.04em solid rgb(156, 152, 152);
+}
+
+.form-enrollment .err{
+    color: rgb(197, 90, 90);
+    position: absolute;
+    margin: -1.2em 0 0 0.2em;
+    font-weight: bold;
+    line-height: 0.8em;
+}
+
+.form-enrollment button{
+    width: 100%;
+    font-size: 1.2em;
+    background-color: rgb(16, 148, 236);
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    padding: 0.4em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.sign-up button{
+    margin-top: 1em;
+}
+
+.log-in button{
+    margin-top: 3.6em;
+}
+.reset-password button{
+    margin-top: 4em;
+}
+
+.change-password button{
+    margin-top: 3em;
+}
+
+.sign-up a,
+.log-in a{
+    color: rgb(22, 103, 156);
+    margin-top: 1em;
+    display: block;
+}
+

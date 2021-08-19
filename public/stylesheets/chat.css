@@ -1,0 +1,301 @@
+
+.chat-box{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-size: 1em;
+    border-radius: 0.8em;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.chat-box .friend{
+    background-color: rgb(63, 124, 104);
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+.chat-header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(66, 70, 88);  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.2em solid rgb(16, 148, 236);
+    font-size: 0.9em;
+    flex: 1;
+}
+.chat-box .far,.chat-box .fas{
+    color: white;
+    font-size: 2em;
+    transition: 0.3s;
+}
+
+.chat-header *{
+    margin-right:0.2em;  
+    
+}
+
+.chat-header .far{
+    margin: 0 0.4em;
+ }
+ .chat-header .fas:hover{ 
+     cursor: pointer;
+ }
+
+ .all-messages{
+    padding: 1px;
+    height: 25em;
+    width: 100%;
+    overflow-y: scroll;
+    background-color: rgb(248, 247, 246);
+    flex: 9;
+}
+
+.all-messages .box-my-message,
+.all-messages .box-message{
+    display: flex;
+    margin: 0.4em;
+    position: relative;
+
+}
+.all-messages .box-my-message{
+    flex-direction: row;
+}
+.all-messages .box-message{
+    flex-direction: row-reverse;
+}
+
+.all-messages .my-message:before,
+.all-messages .message.message:before
+{
+   content: "";
+   width: 0px;
+   height: 0px;
+   box-sizing: border-box;
+   position: absolute;
+   top: 0.5em;
+
+ }
+
+ .all-messages .my-message:before{
+    border-left: 0.5em solid transparent;
+    border-right: 0em solid transparent;
+    left: -0.5em;
+    border-top: 0.4em solid  rgb(16, 148, 236);
+ }
+
+ .all-messages .message:before{
+    border-right: 0.5em solid transparent;
+    border-left: 0em solid transparent;
+    right: -0.5em;
+    border-top: 0.4em solid  rgb(160, 143, 143);
+ }
+
+.all-messages .img{
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.all-messages .my-message,.message{
+    max-width: 10em;
+    font-size: 1.1em;
+    color: white;
+    padding:  0.2em 0.4em 1.2em 0.4em;
+    border-radius: 0.4em;
+    word-wrap: break-word;
+    display: inline-block;
+    min-width: 6em;
+    position: relative;
+    min-height: 2em;
+}
+
+.all-messages .my-message{
+    background-color: rgb(16, 148, 236);
+    margin-left: 0.5em;
+}
+
+.all-messages .message{
+    background-color: rgb(160, 143, 143);
+    margin-right: 0.5em;
+}
+
+.all-messages .other-reply-message,
+.all-messages .i-reply-message{
+    font-size: 0.65em;
+    padding: 0.2em;
+    border-radius: 0.2em;
+    border-left: 0.15em solid rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 0.4em 0 0.2em 0;
+}
+ .all-messages .replyName .name{
+    font-size: 0.7em !important ;
+}
+.all-messages .i-reply-message{
+    background-color:rgb(51, 122, 168);
+}
+
+.all-messages .other-reply-message{
+    background-color: rgb(122, 109, 109);
+}
+
+.all-messages .data-bottom-message{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    position: absolute;
+    bottom: 0.1em;
+    left: 0.1em;
+    width: 100%;
+    justify-content: space-between;
+}
+.all-messages .offensive{
+    font-size: 0.7em;
+    
+}
+.all-messages .date{
+    font-size: 0.6em;
+}
+.all-messages .offensive{
+    cursor: pointer;
+}
+
+.all-messages .response{
+    direction: rtl;
+    font-size: 0.7em; 
+    cursor: pointer;
+    padding-right: 0.4em;
+}
+.all-messages .message .name,
+.all-messages .my-message .name{
+    font-size: 0.5em;
+    cursor: pointer;
+}
+
+.all-messages .text {
+    direction: rtl;
+}
+
+.all-messages .text .name{
+    font-size: 1em;
+}
+.box-send-message{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 0.05em solid rgb(51, 122, 168);
+}
+
+.box-send-message .reply-message{
+    display:none;
+    position: absolute;
+    width: 80%;
+    height: 5em;
+    border-radius: 0.4em;
+    background-color: rgb(67, 101, 117);
+    left: 50%;
+    transform: translate(-50%, -100%);
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    padding: 0.3em;
+    word-wrap: break-word;
+}
+.box-send-message .reply-message .close{
+    margin-right: 0.5em;
+    direction: rtl;
+}
+.box-send-message .reply-message .name{
+    font-size: 0.6em;
+}
+.box-send-message .reply-message .fas{
+    color: rgb(66, 70, 88); 
+    font-size: 1.3em;
+    cursor: pointer; 
+    position: absolute;
+}
+
+.box-send-message .reply-message .text{
+    color: rgb(66, 70, 88); 
+    background-color: rgb(243, 237, 237);
+    font-size: 1.3em;
+    height: 100%;
+    overflow: auto;
+    padding: 0.2em;
+    border-radius: 0.2em;
+    display: flex;
+    flex-direction: column;
+}
+.box-send-message .reply-message  span{
+    align-self: flex-end;
+    direction: rtl;
+}
+.box .reply-a{
+    text-decoration: none;
+    color: white;
+}
+
+.box-send-message .input-message{
+    width: 70%;
+    height: 100%;
+}
+.box-send-message input{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 2.5em;
+    outline: none;
+    font-size: 1.2em;
+    direction: rtl;
+    border: none;
+    background-color: white;
+    margin-top: 0.2em;
+}
+
+.box-send-message .icons-input{
+    padding-top: 0.4em;
+}
+.box-send-message .icons-input .fas{
+    color: rgb(51, 122, 168);
+    padding-right: 0.2em;
+    cursor: pointer;
+    font-size: 1.7em;
+    margin-top: 0.3em;
+}
+
+.chat-box .start-chat{
+    color: rgb(124, 122, 122);
+    font-size: 2em;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    width: 60%;
+    transform: translate(-50% -50%);
+}
+
+@media only screen and (max-height: 400px) 
+{
+    .chat-header{
+
+        flex: 1.5;
+    }
+    .upluad-logo{
+        display: none;
+    }
+    .form-upload .form-title {
+        margin-bottom: 1em;
+    }
+ 
+}
+
+
+
+

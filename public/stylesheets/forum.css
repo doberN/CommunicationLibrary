@@ -1,0 +1,326 @@
+
+
+#panel .forum-box{
+    font-family:  'Assistant', sans-serif;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-size: 1em;
+    border-radius: 0.8em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#panel .forum-header{
+    width: 100%;
+    background-color: rgb(66, 70, 88);  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.2em solid rgb(16, 148, 236);
+    flex: 1.1;
+}
+#panel .forum-box .far,.forum-box .fas{
+    color: white;
+    font-size: 1.8em;
+    transition: 0.3s;
+}
+
+#panel .forum-box .back{
+    color: white;
+    font-size: 1.6em;
+    transition: 0.3s;
+}
+
+#panel .forum-header *{
+    margin-right:0.2em;  
+}
+#panel .back{
+    color: rgb(255, 255, 255);
+    font-size: 1.8em;
+}
+#panel .forum-header .far{
+    margin: 0 0.2em;
+ }
+#panel .forum-header .fas:hover{ 
+     cursor: pointer;
+ }
+ #panel .all-forums{
+     width: 100%;
+     flex: 11; 
+     overflow: auto;
+ }
+ #panel .start-forum{
+    color: rgb(124, 122, 122);
+    font-size: 2em;
+    position: relative;
+    top: 40%;
+    left: 10%;
+    width: 60%;
+    transform: translate(-50% -50%);
+}
+#panel .post-box{
+    cursor: pointer;
+    margin: 0.6em auto 0.6em auto;
+    width: 90%;
+    box-shadow: 0 0 4px black;
+    border-radius: 1em;
+    display: flex;
+    background-color: rgb(250, 245, 250);
+    color: rgb(66, 70, 88); 
+    min-height: 4.3em; 
+}
+.post-box .user-img{
+    flex: 1;
+    width: 4em;
+}
+.post-box .user-img img{
+    width: 3em;
+    border-radius: 50%;
+    margin: 0 auto 0 0.9em;
+    display: block;
+    margin-right: 1em; 
+}
+.post-box .post{
+    direction: rtl;
+    flex: 3; 
+}
+.post-box .bottom{
+    margin-top: 0.2em;
+    display: flex;
+}
+.post-box .name{
+    font-size: 1em;
+    color: rgb(51, 122, 168);
+    font-weight: bold;
+    margin-left: 0.2em;
+}
+#panel .post-box .post .title{
+    font-size: 1.3em;
+}
+#panel .post-box .response{
+    font-size: 1em;
+    position: absolute;
+    display: contents;
+    display: inline-flex;
+    margin: 1em;
+}
+
+#panel .forum-box .bottom-data .response{
+    display: flex;
+    padding-left: 1em;
+    align-self: center;
+    font-size: 1.3em;
+    position: relative;
+    display: contents;
+}
+#panel .response .number{
+    font-size: 1.3em;
+    margin-right: 0.2em;
+}
+#panel .forum-box .bottom-data .number{
+    font-size: 2em;
+}
+#panel .response .fas{
+    color: rgb(66, 70, 88);  
+    direction: rtl;
+    font-size: 1.5em;
+}
+
+#panel .all-forums .title{
+    padding: 0.2em;
+    font-size: 1.7em;
+    font-weight:bold;
+    direction: rtl;
+}#panel .all-forums .post .title {
+    width: 8em; 
+}
+#panel .comment-box{
+    direction: rtl;
+    width: 90%; 
+    margin: 0 auto;
+    box-shadow: 0 0 4px black;
+    border-radius: 1em;
+    padding: 0.3em;
+    margin-bottom: 1em;
+    font-size: 0.7em;
+}
+#panel .comment-box .user{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 5em;
+    height: 4.6em;
+}
+#panel .comment-box .img{
+    height: 100%;
+    margin-left: 0.2em;
+}
+#panel .comment-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+#panel .comment-box .date{
+  width: 8em;
+
+}
+#panel .comment-box .name{
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(51, 122, 168);
+}
+#panel .comment-box .text{
+ margin-top: 0.2em;
+ font-size: 1.7em;
+ padding-right: 0.4em;
+}
+#panel .bottom-data {
+    text-align: center;
+}
+#panel .bottom-data .offensive{
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+#panel .bottom-data .response{
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 0.5em;
+}
+#panel .bottom-data .fas{
+    color: rgb(66, 70, 88);
+    font-size: 1.6em;  
+    margin: 0 0.6em;
+    cursor: pointer;
+  
+}
+#panel .all-forums .space{
+  
+    width: 80%;
+  height: 0.2em;
+  background-color: rgb(177, 162, 247);
+  border: none;
+  margin: 2em auto;
+}
+
+#panel .open-send-post {
+    position: absolute;
+    top: 80%;
+    left: 16%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 0 0 2em black;
+    padding: 0.8em;
+    cursor: pointer;
+}
+
+#panel .open-send-post .fas{
+    
+    font-size: 1.8em;
+    color: rgb(16, 148, 236);
+    padding: 0.1em 0.1em 0 0;  
+}
+
+#panel .reply-post{
+    position: relative;
+    margin: 1rem auto;
+    width: 100%;
+    background-color: rgb(202, 207, 199);
+    padding: 0.7rem;
+    border-radius: 1rem;
+}
+#panel .form-send-post{
+    width: 100%;
+    height: 88%;
+    position: absolute;
+    bottom: 0px;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    justify-content: flex-end;
+}
+
+#panel .title-post{
+    width: 90%;
+    height: 2rem;
+
+}
+#panel .form-send-post .reply-post{
+    width: 90%;
+    height: 7em;
+    background-color: rgb(202, 207, 199);
+    padding: 1em;
+    border-radius: 1em;
+    overflow: auto;
+}
+#panel .form-send-post .reply-post .name{
+   cursor: pointer;
+   color: rgb(16, 148, 236);
+   font-weight: bold;
+}
+#panel .form-send-post input{
+    border: none;
+    border-bottom: 2px solid rgb(16, 148, 236);
+  
+}
+
+#panel .form-send-post input,
+#panel .form-send-post textarea{
+    outline: none;
+    color: rgb(66, 70, 88);
+    font-size: 1.3rem;
+    font-family:  'Assistant', sans-serif;
+    padding: 0.6em;
+    margin-bottom: 1em;
+}
+
+#panel .form-send-post textarea{
+
+    border: 2px solid rgb(16, 148, 236);
+}
+
+#panel .input-post{
+    width: 90%;
+    height: 5rem;
+}
+#panel .close-send-post{
+    position: absolute;
+    top: 1em;
+    padding: 1em;
+    align-self: flex-start;
+    z-index: 10;
+}
+#panel .form-send-post button{
+   
+    width: 80%;
+    font-size: 1.3rem;
+    background-color: rgb(16, 148, 236);
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    padding: 0.4em;
+    border-radius: 1em;
+    cursor: pointer;
+    margin: 2em 0 3em 0;
+
+}
+#panel .close-send-post .fas{
+    color: rgb(66, 70, 88);
+    font-size: 2em;
+    cursor: pointer;
+}
+
+@media only screen and (max-height: 400px) 
+  {
+    #panel .form-send-post button{
+   
+        margin: 1em 0 0.5em 0;
+    
+    }
+   
+  }

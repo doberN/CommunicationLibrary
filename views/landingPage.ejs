@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src='https://kit.fontawesome.com/fe7c245d79.js'></script>
+    <link rel='stylesheet' href='/stylesheets/landingPage.css' />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+<div class="appNavigation">
+    <div class="icon">
+        <i class="fas fa-arrow-down"></i>
+    </div>
+</div>
+<section class="plugin hide">
+    <div class="box-url">
+        <div class="close">
+            <i class="fas fa-times"></i>
+        </div>
+        <p>explanation</p>
+        <p>The library of our site is a library that allows you to integrate communication between people. The library provides the ability to send messages, share files, and publish posts. You can integrate the library into any site you choose.</p>
+        <p>how to use?</p>
+       
+        <div class="example">
+            <p>Example</p>
+        
+            
+            <span class="tag-url"><span class="gray">&lt;</span>body<span span class="gray">&gt;</span> </span>
+            <br>
+            &nbsp&nbsp&nbsp&nbsp  
+           <span class="tag-url">
+                <span class="gray">&lt;</span><span>script src</span>
+            </span>
+            <span class="js-script-color">="https://web-dober.herokuapp.com/javascripts/initHtmlPage/initHtml.js"</span>
+
+            <span class="tag-url">
+                <span>type</span>
+            </span>
+            <span class="js-script-color">="module"</span>
+            
+            <span>&gt;</span></span>  
+            <span class="tag-url">
+            <span class="gray">&lt;/</span><span>script<span class="gray">&gt;</span></span></span>
+            </span>
+            
+            <br>
+            <span class="tag-url"><span class="gray">&lt;/</span>body<span span class="gray">&gt;</span> </span> 
+        </div>
+        <p>Try it for yourself</p>
+        <p>If you want to try our library before use <span class="try-plugin"> click here.</span></p>
+    </div>
+</section>
+
+<section class="headline">
+    <div class="content">
+        <div class="data">
+            <p>Communication Library!!</p>
+            <p>insert the line of anywhere on your site so you can enjoy and share messages and files.</p>
+            <button class="start">Get started</button>
+        </div>
+        <div class="logo">
+            <img src="pictureLanding/logo.png" alt="">
+            <img src="pictureLanding/plugin.png" alt="">
+        </div>
+    </div>
+</section>
+<div class="Container-information">
+    <div class="box-data">
+        <img src="pictureLanding/chat.png" class="chat-img" alt="">
+         <p>Chat with friends!</p>
+         <p>We allow you to share files and messages and comment on our forums!</p>
+    </div>
+    <div class="box-data">
+        <img src="pictureLanding/money.png" class="money-img" alt="">
+        <p>Free!!!</p>
+        <p>We allow you to use the plugin for free! And a user experience without advertisements!</p>
+    </div>
+    <div class="box-data">
+        <img src="pictureLanding/follo.png" class="followers-img" alt="">
+        <p>Follow people!</p>
+        <p>You can follow people and receive notifications when sharing files!</p>
+    </div>
+    
+</div>
+<footer>
+    Call us and build your site!
+</footer>
+
+
+<script type="module" src="https://web-dober.herokuapp.com/javascripts/initHtmlPage/initHtml.js" ></script>
+
+<script>
+    const pluginSection = document.querySelector('.plugin');
+    const boxUrl = document.querySelector('.box-url');
+    const close = document.querySelector('.close .fas');
+    const start = document.querySelector('.start');
+
+    const tryPlugin = document.querySelector('.try-plugin');
+
+    tryPlugin.addEventListener('click',(event)=>{
+        const plugin = document.querySelector('#plugin');
+        const startPlugin = document.querySelector('.start-plugin');
+        startPlugin.classList.toggle("hide");
+       
+        plugin.classList.toggle("show-plugin");
+    })
+
+    start.addEventListener('click', function(){
+        pluginSection.classList.toggle('hide');
+        boxUrl.classList.toggle('animation');
+    });
+    close.addEventListener('click', function(){
+        pluginSection.classList.toggle('hide');
+        boxUrl.classList.toggle('animation');
+    })
+
+    
+</script>
+
+   
+
+    
+</body>
+</html>

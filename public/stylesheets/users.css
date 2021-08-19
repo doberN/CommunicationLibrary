@@ -1,0 +1,160 @@
+
+  
+.users-box *{
+    box-sizing: border-box;
+}
+
+.users-box{
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    background-color: rgb(248, 247, 246);
+    box-shadow: 0 0 10px black;
+    border-radius: 0.8em;
+    overflow: hidden;
+}
+
+.users-header{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(66, 70, 88);  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.2em solid rgb(16, 148, 236);
+    padding-left: 0.5em;
+}
+.users-box .far, .users-box .fas{
+    color: white;
+    font-size: 1.8em;
+    transition: 0.3s;
+    font-weight: bold;
+}
+#panel .users-box .room-name{
+    font-weight: normal;
+}
+.users-header *{
+    margin-right:0.2em;  
+}
+
+.users-header-header .far{
+    margin: 0 0.4em;
+ }
+
+ .users-header .fas:hover{
+
+     cursor: pointer;
+ }
+
+ .users-box .all-users{
+     width: 100%;
+     height: 88%;
+     background-color: rgb(248, 247, 246);
+     padding: 1em 1.5em 1em 1.5em;
+     overflow: auto;
+     position: relative;
+ }
+
+ .users-box .all-users .fas,
+ .users-box .all-users .far{
+     color:  rgb(66, 70, 88);
+ }
+
+
+ .all-users .user{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 0.6em;
+    border-radius: 0.6em;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    border-bottom: 0.1em solid rgb(16, 148, 236);
+    align-items: center;
+    cursor: pointer;  
+}
+.all-users .user .content{
+     flex-direction: row-reverse;
+}
+
+.all-users .user::after{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-bottom: 15px white solid;
+    border-left: 40px rgb(16, 148, 236) solid;
+    background-color: rgb(16, 148, 236);
+    content: "";
+}
+
+ .all-users .user .img{
+     width: 38%;
+     height: 100%;
+     padding: 0.7em;
+     margin-right: 0.3em;
+ }
+
+ .all-users .user img{
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+}
+
+.all-users .user .name{
+    font-size: 1.2em;
+    font-weight: bold;
+    color:  rgb(66, 70, 88);
+
+}
+
+.all-users .user .far{
+    font-size: 1.2em;
+    margin-top: 0.1em;
+}
+
+
+.all-users .user .setting {
+   position: absolute;
+   left: 0;
+   margin : 1.3em 0 0 1em;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+.all-users .user .fas{
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-bottom: 0.3em;
+}
+
+.all-users .user button{
+   outline: none;
+   border: 0.1em solid rgb(16, 148, 236);
+   background-color: white;
+   cursor: pointer;
+   color: rgb(16, 148, 236);
+   border-radius: 0.4em;
+   transition: 0.2s;
+   padding: 0.20em;
+}
+
+.all-users .user button:hover{
+  
+    background-color: rgb(16, 148, 236);
+    cursor: pointer;
+    color: white;
+
+ }
+
+
+ @media only screen and (max-width: 600px) 
+ {
+    .all-users .user img{
+        width: 120%;
+        height: 100%;
+        border-radius: 50%;
+   } 
+  
+ }
